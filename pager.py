@@ -89,7 +89,7 @@ async def receive_message(reader):
 # Create connection with the server
 async def open_connection():
     # Open connection with the server socket
-    reader, writer= await asyncio.open_connection('127.0.01', 8888)
+    reader, writer= await asyncio.open_connection('127.0.0.1', 8888)
     addr= writer.get_extra_info('peername')
     print(f"Connected to the server {addr}")
     # receive and send messages to the server

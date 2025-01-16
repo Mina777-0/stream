@@ -3,8 +3,6 @@ import threading
 
 def handle_client(client_socket, addr):
     
-    print(f"Connected to {addr}")
-
     while True:
         try:
             # Recieve data up to 1MB
